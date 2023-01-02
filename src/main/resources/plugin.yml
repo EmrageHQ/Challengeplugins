@@ -1,0 +1,5 @@
+name: Challenges
+version: '${project.version}'
+main: me.gamerpvg.challenges.Main
+api-version: 1.19
+authors: [ GamerPvG ]

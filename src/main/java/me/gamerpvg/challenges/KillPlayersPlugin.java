@@ -8,6 +8,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.player.PlayerDropItemEvent;
+import org.bukkit.event.player.PlayerPortalEvent;
 
 public class KillPlayersPlugin implements Listener {
 
@@ -35,5 +37,11 @@ public class KillPlayersPlugin implements Listener {
         Player player = event.getPlayer();
         event.getPlayer().setHealth(event.getPlayer().getHealth() - 2);
         player.sendMessage(ChatColor.GOLD + "Du hast ein Herz verloren!");
+    }
+    @EventHandler
+    public void onOn(PlayerDropItemEvent event) {
+
+
+
     }
 }
